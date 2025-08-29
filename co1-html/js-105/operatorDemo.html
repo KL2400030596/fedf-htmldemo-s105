@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators Demo</title>
+</head>
+<body>
+    <h1>Operators demo</h1>
+    <pre id="demo"></pre>
+    <script>
+        let x=10;
+        let y=20;
+        let result=(x>y)?"hello":"bye";
+        document.getElementById("demo").innerText=`
+        Addition: ${x+y};
+        Subtraction: ${x-y};
+        Multiplication: ${x*y};
+        Division: ${x/y};
+        Modulus: ${x%y};
+        Addition Assignment: ${x+=2};
+        Subtraction Assignment: ${x-=2};
+        Multiplication Assignment: ${x*=2};
+        Division Assignment: ${x/=2};
+        Modulus Assignment: ${x%=2};
+        Relational Operators Demo:
+        Equivalence: ${x==y};
+        not Equivalence: ${x!==y};
+        Greater than: ${x>y};
+        Less than: ${x<y};
+        Greater than or Equal to: ${x>=y};
+        Less than or Equal to: ${x<=y};
+        logical and: ${x&&y};
+        logical or: ${x||y};
+        logical not: ${!x};
+        ternary operator: ${result}
+        `;
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+ body
+        {
+            background-color: rgb(241, 182, 227);
+            font-size: 20px;
+            display: inline-block;
+        }
+        div
+        {
+          background-color: rgb(222, 220, 225);
+          font-style: italic;
+          display: block;
+          padding: 10px;
+          margin: 10px;
+        }
+        h1
+        {
+           color: rgb(239, 96, 108);
+           font-style: normal;
+        }

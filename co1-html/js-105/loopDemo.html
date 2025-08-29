@@ -1,0 +1,43 @@
+//for loop
+           let even=0;
+           let odd=0;
+              for(let i=1;i<=10;i++){     
+                if(i%2==0){
+                     even++;
+                }
+                else{
+                     odd++;
+                }
+              }
+
+              document.getElementById("demo").innerHTML += "\n"+"Total even numbers are "+even;
+              document.getElementById("demo").innerHTML += "\n"+"Total odd numbers are "+odd;
+
+        //while loop
+            let prime=0;
+            let range=parseInt(prompt("Enter a range to find prime numbers"));
+            let i=2;
+            while(i<range){
+                let isPrime=true;
+                for(let j=2;j<i;j++){
+                    if(i%j==0){
+                        isPrime=false;
+                        break;
+                    }
+                }
+                if(isPrime){
+                    prime++;
+                }
+                i++;
+            } 
+            document.getElementById("demo").innerHTML += "\n"+"Total prime numbers in range "+range+" are "+prime;
+
+        //do-while loop
+            let factorial=1;
+            let num=parseInt(prompt("Enter a number to find factorial"));
+            let k=1;
+            do{
+                factorial *= k;
+                k++;
+            }while(k<=num);
+            document.getElementById("demo").innerHTML += "\n"+"Factorial of "+num+" is "+factorial;
